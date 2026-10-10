@@ -67,10 +67,10 @@ To run or restart the server manually:
 
 ```bash
 # Option 1: Using Node directly (zero dependencies)
-node server.js
+node local-server.js
 
-# Option 2: Using npm
-npm start
+# Option 2: Direct static opening
+# Simply open index.html in any browser or deploy statically
 ```
 
 Open your browser and navigate to:
