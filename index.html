@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="web_standard" name="shell-type">
+  <title>ATIF STORE | The Autumn Neutrality Capsule — Atelier & Co.</title>
+  
+  <!-- Google Fonts: EB Garamond, Manrope, Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      "darkMode": "class",
+      "theme": {
+        "extend": {
+          "colors": {
+            "on-secondary-fixed": "#2d1600",
+            "surface-dim": "#dcdad4",
+            "primary-fixed": "#f1dfd9",
+            "on-error-container": "#93000a",
+            "tertiary-container": "#451200",
+            "inverse-on-surface": "#f3f0ea",
+            "secondary-fixed-dim": "#f0bd8d",
+            "surface-tint": "#695b58",
+            "on-secondary": "#ffffff",
+            "surface-container-lowest": "#ffffff",
+            "on-secondary-container": "#7a532c",
+            "error-container": "#ffdad6",
+            "error": "#ba1a1a",
+            "secondary": "#7d562f",
+            "tertiary": "#210500",
+            "background": "#fcf9f3",
+            "secondary-container": "#ffca99",
+            "on-tertiary-container": "#d0704c",
+            "outline": "#807571",
+            "inverse-surface": "#31312d",
+            "on-error": "#ffffff",
+            "surface-bright": "#fcf9f3",
+            "primary": "#140c09",
+            "on-tertiary-fixed-variant": "#7a2f10",
+            "on-tertiary": "#ffffff",
+            "on-primary": "#ffffff",
+            "on-tertiary-fixed": "#380d00",
+            "on-primary-fixed-variant": "#504441",
+            "surface-container": "#f0eee8",
+            "on-surface": "#1c1c18",
+            "tertiary-fixed": "#ffdbcf",
+            "on-primary-container": "#968783",
+            "surface-variant": "#e5e2dc",
+            "on-primary-fixed": "#231917",
+            "surface-container-highest": "#e5e2dc",
+            "on-background": "#1c1c18",
+            "surface": "#fcf9f3",
+            "outline-variant": "#d2c3c0",
+            "on-surface-variant": "#4e4542",
+            "secondary-fixed": "#ffdcbe",
+            "surface-container-high": "#ebe8e2",
+            "primary-fixed-dim": "#d4c3be",
+            "on-secondary-fixed-variant": "#623f1a",
+            "primary-container": "#2b211e",
+            "inverse-primary": "#d4c3be",
+            "tertiary-fixed-dim": "#ffb59b",
+            "surface-container-low": "#f6f3ed"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "margin-desktop": "4.5rem",
+            "space-2xl": "4rem",
+            "space-3xl": "6.5rem",
+            "space-md": "1rem",
+            "margin-tablet": "2.5rem",
+            "space-xs": "0.5rem",
+            "margin": "1.25rem",
+            "space-lg": "1.5rem",
+            "space-2xs": "0.25rem",
+            "space-sm": "0.75rem",
+            "gutter": "1.5rem",
+            "gutter-desktop": "2.5rem",
+            "space-xl": "2.5rem"
+          },
+          "fontFamily": {
+            "label-md": ["Manrope"],
+            "body-md": ["Manrope"],
+            "headline-xl": ["EB Garamond"],
+            "body-sm": ["Manrope"],
+            "body-lg": ["Manrope"],
+            "headline-xl-mobile": ["EB Garamond"],
+            "display-hero-mobile": ["EB Garamond"],
+            "headline-md": ["EB Garamond"],
+            "headline-lg": ["EB Garamond"],
+            "title-editorial": ["EB Garamond"],
+            "display-hero": ["EB Garamond"],
+            "label-sm": ["Manrope"],
+            "headline-sm": ["EB Garamond"]
+          },
+          "fontSize": {
+            "label-md": ["0.8125rem", {"lineHeight": "1.125rem", "letterSpacing": "0.06em", "fontWeight": "600"}],
+            "body-md": ["1rem", {"lineHeight": "1.6rem", "letterSpacing": "0em", "fontWeight": "400"}],
+            "headline-xl": ["3.25rem", {"lineHeight": "3.75rem", "letterSpacing": "-0.015em", "fontWeight": "400"}],
+            "body-sm": ["0.875rem", {"lineHeight": "1.4rem", "letterSpacing": "0.005em", "fontWeight": "400"}],
+            "body-lg": ["1.125rem", {"lineHeight": "1.75rem", "letterSpacing": "-0.005em", "fontWeight": "400"}],
+            "headline-xl-mobile": ["2.25rem", {"lineHeight": "2.75rem", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+            "display-hero-mobile": ["2.75rem", {"lineHeight": "3.25rem", "letterSpacing": "-0.015em", "fontWeight": "400"}],
+            "headline-md": ["1.75rem", {"lineHeight": "2.25rem", "letterSpacing": "0em", "fontWeight": "500"}],
+            "headline-lg": ["2.25rem", {"lineHeight": "2.75rem", "letterSpacing": "-0.01em", "fontWeight": "500"}],
+            "title-editorial": ["1.125rem", {"lineHeight": "1.5rem", "letterSpacing": "0.04em", "fontWeight": "400"}],
+            "display-hero": ["4.5rem", {"lineHeight": "5rem", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+            "label-sm": ["0.6875rem", {"lineHeight": "0.875rem", "letterSpacing": "0.1em", "fontWeight": "600"}],
+            "headline-sm": ["1.375rem", {"lineHeight": "1.75rem", "letterSpacing": "0em", "fontWeight": "500"}]
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Custom CSS enhancements -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-surface font-body-md text-body-md text-on-surface antialiased" style="background-color: rgb(80, 68, 65); color: rgb(252, 249, 243);">
+
+  <!-- FIXED LUXURY HEADER -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]" style="background-color: rgba(80, 68, 65, 0.95); color: rgb(252, 249, 243); border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+    <!-- Announcement Bar -->
+    <div class="bg-primary-container text-surface-container-lowest px-margin md:px-margin-tablet lg:px-margin-desktop py-space-2xs text-center cursor-pointer transition-colors hover:bg-[#342b29]" onclick="copyPromoCode('ATELIER')">
+      <p class="font-label-sm text-label-sm tracking-widest uppercase flex items-center justify-center gap-2">
+        <span>Complimentary worldwide shipping on orders over $150 | Use code <span class="font-bold text-secondary-fixed underline underline-offset-2">ATELIER</span> for 15% off</span>
+        <span class="material-symbols-outlined text-xs">content_copy</span>
+      </p>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <div class="h-20 w-full px-margin md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between gap-space-md">
+      <!-- Left: Logo & Department Links -->
+      <div class="flex items-center gap-space-lg">
+        <!-- Mobile Menu Toggle Button -->
+        <button class="xl:hidden p-1 text-[#FCF9F3] hover:text-[#ffca99] transition-colors" onclick="toggleMobileNav()" aria-label="Open Navigation Menu">
+          <span class="material-symbols-outlined text-2xl">menu</span>
+        </button>
+
+        <a class="flex items-center gap-space-sm" data-path="home" href="#">
+          <span class="font-headline-md text-headline-md tracking-tight uppercase text-[#FCF9F3]">ATIF STORE&nbsp;</span>
+        </a>
+
+        <nav class="hidden xl:flex items-center gap-space-lg ml-space-md">
+          <a class="font-label-md text-label-md uppercase tracking-wider text-[#F6F3ED] hover:text-[#ffdcbe] transition-colors" href="#featured-collection" onclick="filterByDept('women')">Women</a>
+          <a class="font-label-md text-label-md uppercase tracking-wider text-[#F6F3ED] hover:text-[#ffdcbe] transition-colors" href="#featured-collection" onclick="filterByDept('men')">Men</a>
+          <a class="font-label-md text-label-md uppercase tracking-wider text-[#F6F3ED] hover:text-[#ffdcbe] transition-colors" href="#featured-collection" onclick="filterByDept('kids')">Kids &amp; Toddlers</a>
+          <a class="font-label-md text-label-md uppercase tracking-wider text-[#F6F3ED] hover:text-[#ffdcbe] transition-colors" href="#featured-collection" onclick="filterByDept('loungewear')">Loungewear</a>
+          <a class="font-label-md text-label-md uppercase tracking-wider text-[#F6F3ED] hover:text-[#ffdcbe] transition-colors" href="#featured-collection" onclick="filterByDept('all')">New In</a>
+          <a class="font-label-md text-label-md uppercase tracking-wider text-[#F6F3ED] hover:text-[#ffdcbe] transition-colors cursor-pointer" onclick="openLookbookModal()">Editorial</a>
+        </nav>
+      </div>
+
+      <!-- Right: Search, Currency, Wishlist, Bag, Account -->
+      <div class="flex items-center gap-space-md">
+        <!-- Interactive Search Bar with ⌘K -->
+        <div class="hidden md:flex items-center bg-[#3f3533] px-space-sm py-space-xs rounded-DEFAULT min-w-[220px] cursor-pointer hover:bg-[#483c3a] transition-colors" onclick="toggleSearchModal(true)">
+          <span class="material-symbols-outlined text-[#d4c3be] text-lg mr-space-2xs">search</span>
+          <span class="font-body-sm text-body-sm text-[#d4c3be] w-full select-none">Search collections...</span>
+          <kbd class="font-label-sm text-label-sm text-[#d4c3be] bg-[#2b211e] px-space-2xs rounded-DEFAULT uppercase shadow-inner">⌘K</kbd>
+        </div>
+
+        <!-- Mobile search icon -->
+        <button class="md:hidden p-space-2xs text-[#F6F3ED] hover:text-[#ffdcbe]" onclick="toggleSearchModal(true)" aria-label="Search">
+          <span class="material-symbols-outlined text-xl">search</span>
+        </button>
+
+        <!-- Dynamic Currency Selector -->
+        <div class="hidden sm:flex items-center gap-space-2xs font-label-md text-label-md text-[#F6F3ED]">
+          <span class="material-symbols-outlined text-base">language</span>
+          <select id="currencySelect" aria-label="Currency" class="bg-transparent border-0 outline-none font-label-md text-label-md uppercase cursor-pointer text-[#F6F3ED] hover:text-[#ffca99] transition-colors">
+            <option value="USD" class="text-primary bg-[#3f3533]">USD ($)</option>
+            <option value="EUR" class="text-primary bg-[#3f3533]">EUR (€)</option>
+            <option value="GBP" class="text-primary bg-[#3f3533]">GBP (£)</option>
+          </select>
+        </div>
+
+        <!-- Wishlist Button -->
+        <button aria-label="Wishlist" class="relative p-space-2xs text-[#F6F3ED] hover:text-[#ffdcbe] transition-colors" onclick="toggleWishlistDrawer(true)">
+          <span class="material-symbols-outlined text-xl">favorite</span>
+          <span id="wishlistCountBadge" class="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-[#7d562f] text-[#FCF9F3] font-label-sm text-[10px] font-bold flex items-center justify-center">2</span>
+        </button>
+
+        <!-- Shopping Bag Button -->
+        <button aria-label="Shopping Bag" class="relative p-space-2xs text-[#F6F3ED] hover:text-[#ffdcbe] transition-colors flex items-center gap-space-2xs" onclick="toggleCart(true)">
+          <span class="material-symbols-outlined text-xl">shopping_bag</span>
+          <span id="bagCountBadge" class="font-label-sm text-label-sm font-semibold bg-[#ffca99] text-[#2b211e] rounded-full w-4 h-4 flex items-center justify-center text-[10px]">3</span>
+        </button>
+
+        <!-- User Profile Avatar with VIP Salon link -->
+        <div class="relative group">
+          <button aria-label="User Account" class="flex items-center ml-space-2xs focus:outline-none" onclick="openStylistModal()">
+            <img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-[#ffca99]/40 hover:ring-[#ffca99] transition-all" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAyfnLJVJUgHb-PpadYpZ6A9SoJo5Ir5Tojk9WPf5qOd-OnodkA4zJQDxvYtfci0Pu_AeiIybhEAa9H9Z-zupR-3I2E4eLnjH1U2sRDarospB0FtB-Ef7fJPipwqMh410ESPgjaKNGRe85QE_-KWLml4i9W3v6NSI8tkTOo5Ozp6o8czNpECBfQat5ZHBy2TmuGa-B3V4mTCqgmFblReTFZ0rRKS3WK4LK1Oz4FclEVs7DitebesqQ">
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN BODY CONTAINER -->
+  <main class="w-full pt-28 bg-surface min-h-[calc(100vh-28rem)]" style="background-color: transparent; color: rgb(252, 249, 243);">
+    <div class="flex flex-col w-full">
+
+      <!-- Top Subtle Banner Indicator / Editorial Stamp -->
+      <div class="w-full px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xs flex justify-between items-center text-on-surface-variant font-label-sm text-label-sm uppercase tracking-widest bg-surface-container-low" style="background-color: rgb(63, 53, 51); color: rgb(235, 230, 223); border-bottom: 1px solid rgba(255, 255, 255, 0.08);">
+        <div class="flex items-center gap-space-xs">
+          <span class="w-1.5 h-1.5 rounded-full bg-secondary pulse-dot"></span>
+          <span>Autumn / Winter 2025 Edition Nº 04</span>
+        </div>
+        <div class="hidden sm:flex items-center gap-space-lg">
+          <span>100% Traceable Fibers</span>
+          <span>•</span>
+          <span>Organic Babywear Certified</span>
+          <span>•</span>
+          <span>Bespoke Tailoring</span>
+        </div>
+        <div class="flex items-center gap-space-2xs text-[#ffca99] font-semibold cursor-pointer hover:underline" onclick="openManifestoModal()">
+          <span class="material-symbols-outlined text-xs">local_shipping</span>
+          <span>Global Dispatch</span>
+        </div>
+      </div>
+
+      <!-- HERO SECTION: The Autumn Neutrality Capsule -->
+      <section class="relative w-full overflow-hidden px-margin md:px-margin-tablet lg:px-margin-desktop pt-space-md pb-space-2xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-stretch">
+          <!-- Left Column: Editorial Headline & Actions -->
+          <div class="lg:col-span-5 flex flex-col justify-between py-space-lg lg:pr-space-md order-2 lg:order-1">
+            <div class="space-y-space-md">
+              <div class="inline-flex items-center gap-space-xs px-space-sm py-space-2xs" style="background-color: #3f3533; border: 1px solid #7d562f; color: #ffdcbe;">
+                <span class="font-label-sm text-label-sm text-[#ffca99] uppercase tracking-widest">Seasonal Narrative</span>
+                <span class="text-[#d2c3c0] text-xs">/</span>
+                <span class="font-label-sm text-label-sm text-[#EBE6DF] uppercase">Vol. VIII</span>
+              </div>
+              <h1 class="font-display-hero text-display-hero text-[#FCF9F3] leading-none tracking-tight">
+                The Autumn<br>
+                <span class="italic font-normal text-[#ffca99]">Neutrality</span><br>
+                Capsule.
+              </h1>
+              <p class="font-body-lg text-body-lg text-[#EBE6DF] max-w-md pt-space-xs">
+                An intergenerational dialogue crafted in unbleached Mongolian cashmere, combed organic cotton, and double-faced camel wool. Uniforms for living, tailored gracefully across women, men, and miniature silhouettes.
+              </p>
+            </div>
+
+            <div class="space-y-space-lg pt-space-xl">
+              <!-- Department Quick Shop Buttons -->
+              <div class="flex flex-col sm:flex-row flex-wrap gap-space-xs">
+                <a class="flex-1 min-w-[130px] text-[#231917] hover:opacity-95 transition-all duration-300 py-space-sm px-space-md text-center font-label-md text-label-md uppercase tracking-wider shadow-sm font-semibold" style="background-color: #f1dfd9;" href="#featured-collection" onclick="filterByDept('women')">
+                  Shop Women
+                </a>
+                <a class="flex-1 min-w-[130px] text-white hover:opacity-95 transition-all duration-300 py-space-sm px-space-md text-center font-label-md text-label-md uppercase tracking-wider shadow-sm" style="background-color: rgb(168, 124, 81);" href="#featured-collection" onclick="filterByDept('men')">
+                  Shop Men
+                </a>
+                <a class="flex-1 min-w-[130px] text-white hover:opacity-95 transition-all duration-300 py-space-sm px-space-md text-center font-label-md text-label-md uppercase tracking-wider shadow-sm" style="background-color: rgb(168, 124, 81);" href="#featured-collection" onclick="filterByDept('kids')">
+                  Shop Kids
+                </a>
+              </div>
+
+              <!-- Metrics Summary Cards -->
+              <div class="grid grid-cols-3 gap-space-sm pt-space-md p-space-md" style="background-color: #3f3533; border: 1px solid rgba(255, 255, 255, 0.08);">
+                <div>
+                  <p class="font-headline-sm text-headline-sm text-[#FCF9F3]">100%</p>
+                  <p class="font-label-sm text-label-sm text-[#d4c3be] uppercase tracking-wider">Natural Fibers</p>
+                </div>
+                <div>
+                  <p class="font-headline-sm text-headline-sm text-[#FCF9F3]">Zero</p>
+                  <p class="font-label-sm text-label-sm text-[#d4c3be] uppercase tracking-wider">Azo Chemical Dyes</p>
+                </div>
+                <div>
+                  <p class="font-headline-sm text-headline-sm text-[#FCF9F3]">3-Gen</p>
+                  <p class="font-label-sm text-label-sm text-[#d4c3be] uppercase tracking-wider">Family Longevity</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Magazine Collage Image Composition -->
+          <div class="lg:col-span-7 relative order-1 lg:order-2 flex flex-col md:flex-row gap-space-md">
+            <!-- Large Focus Look Card -->
+            <div class="relative flex-1 h-[480px] lg:h-[620px] overflow-hidden shadow-lg group cursor-pointer" onclick="openQuickView('prod-06')">
+              <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
+                   alt="High fashion editorial photography of an elegant woman and a stylish man wearing matching camel wool overcoats and oat milk cashmere turtlenecks" 
+                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuAg5hhNFI71W0_J4qRGPxmDCt9JVq51wyB1JrpaPXFhDu2j4MzgaoS62iSRNG2TkpDxq8y-zUlWoM2AyCcJBRAIL8sw2p0lWw7MAzxLrh16zt8VM18oHkaHBlUyGUvt6UaH2X8WKuEqu04Ke3DVy8QHgEDd4ob5G9gPEs8VAHodwWgO3N-lYBw_Jv4UjlJiKOR9xyhVppILx7Z-7rfBgOYU2hp2WbPOWMa_lujeLG3MbcROXOE7UMqh">
+              <div class="absolute bottom-space-md left-space-md bg-surface-container-lowest/90 backdrop-blur-md p-space-sm max-w-[200px] shadow-sm">
+                <span class="font-label-sm text-label-sm uppercase block" style="color: rgb(168, 124, 81);">Look 01</span>
+                <p class="font-headline-sm text-headline-sm text-primary leading-tight">The Double-Faced Paletot</p>
+              </div>
+            </div>
+
+            <!-- Two stacked complementary editorial cards -->
+            <div class="relative flex-1 flex flex-col gap-space-md">
+              <div class="relative h-[280px] lg:h-[350px] overflow-hidden shadow-md group cursor-pointer" onclick="openQuickView('prod-03')">
+                <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
+                     alt="Tender lifestyle portrait of a chic mother holding a happy toddler in a warm oat milk organic ribbed knit romper" 
+                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiFklJEAQgBxCYA01sk5HyxhdFpuXcrPsGQ8EJdFtwu65Ts3Mg1uL9YMIZ3z1wHjD1u2NFw-59MXE3knQQxEjeGaC2cQ7Ioc7oGOnFDwvRN6KP-POqrzfZEDKNxXWt4kyIwVdepxXH9bQIkWQBwNL3Q3vxxo4iT5ddkVOu5NYUwAQTHCfPaPo55-Ft7kE2r5EajWbkrc42zyRD2Tm0B6R_4rzFUD931W6LsuwD8Lqw1IQZ-IxmOJ4e">
+                <div class="absolute top-space-sm right-space-sm bg-secondary text-on-secondary px-space-xs py-space-2xs font-label-sm text-label-sm tracking-widest uppercase" style="background-color: rgb(168, 124, 81); color: rgb(255, 255, 255);">
+                  Bestseller
+                </div>
+              </div>
+
+              <div class="relative flex-1 bg-surface-container p-space-md flex flex-col justify-between cursor-pointer hover:bg-[#483d3a] transition-colors" onclick="openLookbookModal()">
+                <div>
+                  <span class="font-label-sm text-label-sm uppercase tracking-widest text-[#ffca99]">Capsule In Focus</span>
+                  <p class="font-headline-sm text-headline-sm text-primary mt-space-2xs italic text-[#FCF9F3]">
+                    "Rooted in tones of roasted chicory, wild oats, and unrefined raw umber."
+                  </p>
+                </div>
+                <div class="flex items-center justify-between pt-space-sm">
+                  <span class="font-label-sm text-label-sm uppercase tracking-wider text-[#d4c3be]">Archival Series 04</span>
+                  <span class="material-symbols-outlined text-[#ffca99] text-lg">arrow_outward</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CATEGORY GATEWAY GRID: Women's Sartorial, Men's Knitwear, Kids & Toddler Essentials -->
+      <section class="w-full bg-surface-container-low py-space-3xl px-margin md:px-margin-tablet lg:px-margin-desktop" style="background-color: rgb(67, 56, 54); color: rgb(252, 249, 243);">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-space-2xl gap-space-sm">
+          <div>
+            <p class="font-label-sm text-label-sm text-[#ffca99] uppercase tracking-widest">Department Curations</p>
+            <h2 class="font-headline-xl text-headline-xl text-[#FCF9F3] mt-space-2xs">The Category Portals</h2>
+          </div>
+          <p class="font-body-md text-body-md text-[#EBE6DF] max-w-md">
+            Structured silhouettes meet featherweight softness. Three deliberate divisions calibrated for unified sartorial harmony.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter-desktop">
+          <!-- Gateway 1: Women's Sartorial -->
+          <a class="group flex flex-col overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500" style="background-color: rgb(52, 43, 41); border: 1px solid rgba(255, 255, 255, 0.08);" href="#featured-collection" onclick="filterByDept('women')">
+            <div class="relative aspect-[3/4] overflow-hidden bg-[#2b211e]">
+              <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
+                   alt="Chic woman dressed in tailored wide-leg trousers, espresso-hued structured blazer, and a delicate silk blouse" 
+                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaZJD9jzqZ5vx2N7kA327PBJulZM5Hxr7Gi31YR6YbyBxNzRjPe-HctBHOMwz3kt3CpZP3NQ0MTePZ7zfbBX_tr4zSuSusEp80j5K9B2Vv37EsJA8X2JBO_JLrhTlSU-aaTaI0KVPdFmDFWNaInjnuH5EZ4iI7hzAEWaSP1X79daQzh-4lJAGA0YVtqleuP6WDSBCVdUqEBgAKTnEnEDb8b3KN6CxY6TpziyUYfT_52MAGv7bf42Xt">
+              <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute top-space-md left-space-md px-space-sm py-space-2xs backdrop-blur-sm" style="background-color: rgba(52, 43, 41, 0.9); border-left: 2px solid #ffca99; color: #ffca99;">
+                <span class="font-label-sm text-label-sm tracking-widest uppercase">Department 01</span>
+              </div>
+            </div>
+            <div class="p-space-lg flex flex-col flex-1 justify-between">
+              <div>
+                <h3 class="font-headline-md text-headline-md text-[#FCF9F3] group-hover:text-[#ffca99] transition-colors">Women's Sartorial</h3>
+                <p class="font-body-sm text-body-sm text-[#EBE6DF] mt-space-xs">Fluid wide-leg trousers, sculptural trench wraps, and raw silk tailoring rendered in warm neutrals.</p>
+              </div>
+              <div class="mt-space-lg flex items-center justify-between font-label-md text-label-md text-[#FCF9F3] uppercase tracking-wider">
+                <span>Explore Collection</span>
+                <span class="material-symbols-outlined transition-transform group-hover:translate-x-1 text-[#ffca99]">arrow_forward</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Gateway 2: Men's Knitwear & Outerwear -->
+          <a class="group flex flex-col overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500" style="background-color: rgb(52, 43, 41); border: 1px solid rgba(255, 255, 255, 0.08);" href="#featured-collection" onclick="filterByDept('men')">
+            <div class="relative aspect-[3/4] overflow-hidden bg-[#2b211e]">
+              <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
+                   alt="Handsome mature man modeling a chunky cable-knit fisherman sweater" 
+                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuDu_EYQ24booURBnezynKDSjpqn_dc-gQzeyXaMZbOmuuoHR2nSOLbiRF_TYl1qGwQsxYjTZP0QHzp3cx-pze-ca9zmgvEILejE4E4L1q-8EHBSlL0SQluOA3dq_fFsfXMd2c_pWXJ_jj5SAJU1Glf4bINJLRI30-PyjI-DC8FYCFjSQky1H93wwsqvq6in9Xoo6ZDc1KcaD0o2nyfQUfyyb5I-FmJhGK0RShN4de2cwX2b-0xoC_XN">
+              <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute top-space-md left-space-md px-space-sm py-space-2xs backdrop-blur-sm" style="background-color: rgba(52, 43, 41, 0.9); border-left: 2px solid #ffca99; color: #ffca99;">
+                <span class="font-label-sm text-label-sm tracking-widest uppercase">Department 02</span>
+              </div>
+            </div>
+            <div class="p-space-lg flex flex-col flex-1 justify-between">
+              <div>
+                <h3 class="font-headline-md text-headline-md text-[#FCF9F3] group-hover:text-[#ffca99] transition-colors">Men's Knitwear &amp; Outerwear</h3>
+                <p class="font-body-sm text-body-sm text-[#EBE6DF] mt-space-xs">Architectural overcoats, heavy gauge Scottish ribbed pullovers, and tactile boiled merino layers.</p>
+              </div>
+              <div class="mt-space-lg flex items-center justify-between font-label-md text-label-md text-[#FCF9F3] uppercase tracking-wider">
+                <span>Explore Collection</span>
+                <span class="material-symbols-outlined transition-transform group-hover:translate-x-1 text-[#ffca99]">arrow_forward</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Gateway 3: Kids & Toddler Essentials -->
+          <a class="group flex flex-col overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500" style="background-color: rgb(52, 43, 41); border: 1px solid rgba(255, 255, 255, 0.08);" href="#featured-collection" onclick="filterByDept('kids')">
+            <div class="relative aspect-[3/4] overflow-hidden bg-[#2b211e]">
+              <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
+                   alt="Two adorable young children wearing mini tailored trench coats" 
+                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAKOHM4Pgv5JzdmdN-eSU-kGCO08VnaVCudxdVuL-pM0UHi4Ob3QvZMjTBRS_k8_vr5H2yptuHkcNJLJl38QjB5_Ihzda6-z1LeyY9tdJj9iec2tlparM0HA7ZXkakIW_yfakPGuNJohDNN_rwVfYJ9t2xel8iTUzi6U_dUQ9yp9FAYhZzfjdtEhAjz_TNF-aWp_2oLIee-2U_kguE7gdXJktWekYmxb2v64_6hLcXav_NgzjQf1-s">
+              <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute top-space-md left-space-md px-space-sm py-space-2xs backdrop-blur-sm" style="background-color: rgba(52, 43, 41, 0.9); border-left: 2px solid #ffca99; color: #ffca99;">
+                <span class="font-label-sm text-label-sm tracking-widest uppercase">Department 03</span>
+              </div>
+              <div class="absolute bottom-space-md right-space-md px-space-xs py-space-2xs font-label-sm text-label-sm tracking-widest uppercase bg-[#ffca99] text-[#2b211e] font-semibold">
+                GOTS Certified
+              </div>
+            </div>
+            <div class="p-space-lg flex flex-col flex-1 justify-between">
+              <div>
+                <h3 class="font-headline-md text-headline-md text-[#FCF9F3] group-hover:text-[#ffca99] transition-colors">Kids &amp; Toddler Essentials</h3>
+                <p class="font-body-sm text-body-sm text-[#EBE6DF] mt-space-xs">Hypoallergenic ribbed bodysuits, cozy everyday rompers, and bespoke miniature weather trenches.</p>
+              </div>
+              <div class="mt-space-lg flex items-center justify-between font-label-md text-label-md text-[#FCF9F3] uppercase tracking-wider">
+                <span>Explore Collection</span>
+                <span class="material-symbols-outlined transition-transform group-hover:translate-x-1 text-[#ffca99]">arrow_forward</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- FEATURED COLLECTION: Warm Earth & Espresso Tones -->
+      <section id="featured-collection" class="w-full py-space-3xl px-margin md:px-margin-tablet lg:px-margin-desktop bg-surface" style="background-color: rgb(80, 68, 65); color: rgb(252, 249, 243);">
+        <!-- Header with Dynamic Filter Tabs & Sort Controls -->
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md pb-space-xl">
+          <div>
+            <div class="flex items-center gap-space-xs text-[#ffca99] font-label-sm text-label-sm tracking-widest uppercase">
+              <span>Curated Palette Edition</span>
+              <span>•</span>
+              <span class="text-[#EBE6DF]">Autumn 25 Release</span>
+            </div>
+            <h2 class="font-headline-xl text-headline-xl text-[#FCF9F3] mt-space-2xs">Warm Earth &amp; Espresso Tones</h2>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-space-sm justify-between lg:justify-end">
+            <!-- Filter Tabs -->
+            <div class="flex items-center gap-space-2xs overflow-x-auto pb-space-2xs" id="productFilterControls">
+              <button class="px-space-md py-space-xs font-label-sm text-label-sm uppercase tracking-wider transition-all font-semibold" 
+                      style="background-color: #ffca99; color: #2b211e;" 
+                      data-category="all" 
+                      type="button">
+                All Capsule (12)
+              </button>
+              <button class="px-space-md py-space-xs font-label-sm text-label-sm uppercase tracking-wider text-[#FCF9F3] hover:bg-[#5c4f4b] transition-all" 
+                      style="background-color: #3f3533;" 
+                      data-category="women" 
+                      type="button">
+                Women
+              </button>
+              <button class="px-space-md py-space-xs font-label-sm text-label-sm uppercase tracking-wider text-[#FCF9F3] hover:bg-[#5c4f4b] transition-all" 
+                      style="background-color: #3f3533;" 
+                      data-category="men" 
+                      type="button">
+                Men
+              </button>
+              <button class="px-space-md py-space-xs font-label-sm text-label-sm uppercase tracking-wider text-[#FCF9F3] hover:bg-[#5c4f4b] transition-all" 
+                      style="background-color: #3f3533;" 
+                      data-category="kids" 
+                      type="button">
+                Kids &amp; Baby
+              </button>
+              <button class="px-space-md py-space-xs font-label-sm text-label-sm uppercase tracking-wider text-[#FCF9F3] hover:bg-[#5c4f4b] transition-all" 
+                      style="background-color: #3f3533;" 
+                      data-category="loungewear" 
+                      type="button">
+                Loungewear
+              </button>
+            </div>
+
+            <!-- Sorting Select Dropdown -->
+            <div class="flex items-center gap-2 bg-[#3f3533] px-3 py-1.5 border border-[rgba(255,255,255,0.08)]">
+              <span class="material-symbols-outlined text-sm text-[#d4c3be]">sort</span>
+              <select id="sortSelect" class="bg-transparent border-0 outline-none font-label-sm text-label-sm text-[#FCF9F3] uppercase cursor-pointer">
+                <option value="featured" class="bg-[#3f3533]">Featured Sequence</option>
+                <option value="price-low" class="bg-[#3f3533]">Price: Low to High</option>
+                <option value="price-high" class="bg-[#3f3533]">Price: High to Low</option>
+                <option value="rating" class="bg-[#3f3533]">Patron Rating</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- DYNAMIC PRODUCT GRID (Rendered by app.js) -->
+        <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+          <!-- Populated dynamically with full micro-interactions -->
+        </div>
+
+        <!-- Collection Bottom Link -->
+        <div class="mt-space-2xl text-center">
+          <a class="inline-flex items-center gap-space-sm font-label-md text-label-md uppercase tracking-widest text-[#FCF9F3] hover:text-[#ffca99] transition-colors underline underline-offset-8 cursor-pointer" onclick="openLookbookModal()">
+            View Entire 48-Piece Autumn Palette Lookbook
+            <span class="material-symbols-outlined text-sm">north_east</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- EDITORIAL STORYTELLING: Conscious Craftsmanship & Family Wardrobe -->
+      <section class="w-full bg-primary text-on-primary py-space-3xl px-margin md:px-margin-tablet lg:px-margin-desktop overflow-hidden">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+          <!-- Left Editorial Story -->
+          <div class="lg:col-span-5 space-y-space-lg">
+            <div class="inline-flex items-center gap-space-xs text-[#ffdcbe] font-label-sm text-label-sm uppercase tracking-widest">
+              <span class="material-symbols-outlined text-sm">eco</span>
+              <span>Sartorial Integrity</span>
+            </div>
+            <h2 class="font-headline-xl text-headline-xl leading-tight text-[#FCF9F3]">
+              Conscious Craftsmanship &amp; The Intergenerational Family Wardrobe.
+            </h2>
+            <p class="font-body-md text-body-md text-[#d4c3be] leading-relaxed">
+              At Atelier &amp; Co., clothes are not designed for seasons that expire in months. We construct heirlooms. From gentle 100% GOTS organic cotton bodysuits that protect infant skin to weatherproof double-face cashmere coats shared across decades, our silhouettes celebrate family ritual.
+            </p>
+
+            <!-- Eco Data Points -->
+            <div class="grid grid-cols-2 gap-space-md pt-space-xs">
+              <div class="bg-primary-container p-space-md border border-[rgba(255,255,255,0.06)]">
+                <span class="font-label-sm text-label-sm text-[#ffdcbe] uppercase tracking-wider block">Raw Materials</span>
+                <p class="font-headline-sm text-headline-sm text-on-primary mt-1 text-[#FCF9F3]">94.8%</p>
+                <p class="font-body-sm text-body-sm text-[#d4c3be] mt-1">Single-origin biodegradable natural fibers without microplastics.</p>
+              </div>
+              <div class="bg-primary-container p-space-md border border-[rgba(255,255,255,0.06)]">
+                <span class="font-label-sm text-label-sm text-[#ffdcbe] uppercase tracking-wider block">Water Recirculation</span>
+                <p class="font-headline-sm text-headline-sm text-on-primary mt-1 text-[#FCF9F3]">100%</p>
+                <p class="font-body-sm text-body-sm text-[#d4c3be] mt-1">Zero wastewater dye houses nestled in Northern Portugal.</p>
+              </div>
+            </div>
+
+            <!-- Inline SVG Material Sourcing Radial Spark -->
+            <div class="pt-space-sm flex items-center gap-space-md">
+              <div class="w-14 h-14 relative flex items-center justify-center">
+                <svg class="w-full h-full -rotate-90 text-secondary" viewBox="0 0 36 36">
+                  <path class="text-primary-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#2b211e" stroke-width="3"></path>
+                  <path class="text-secondary-fixed" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#ffca99" stroke-dasharray="92, 100" stroke-width="3"></path>
+                </svg>
+                <span class="absolute font-label-sm text-label-sm font-bold text-on-primary text-[#FCF9F3]">92%</span>
+              </div>
+              <div>
+                <p class="font-label-md text-label-md uppercase tracking-wider text-on-primary text-[#FCF9F3]">Closed-Loop Fiber Reclamation</p>
+                <p class="font-body-sm text-body-sm text-[#d4c3be]">Every pre-loved item can be returned for studio re-combing.</p>
+              </div>
+            </div>
+
+            <div class="pt-space-md">
+              <button class="inline-block bg-secondary text-on-secondary px-space-lg py-space-sm font-label-md text-label-md uppercase tracking-widest hover:bg-[#ffca99] hover:text-[#2b211e] transition-colors font-semibold" style="background-color: rgb(168, 124, 81); color: rgb(255, 255, 255);" onclick="openManifestoModal()">
+                Read The Transparency Manifesto
+              </button>
+            </div>
+          </div>
+
+          <!-- Right Side Visual Collage with Editorial Details -->
+          <div class="lg:col-span-7 grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+            <div class="md:col-span-7 space-y-space-md">
+              <div class="relative aspect-[4/5] overflow-hidden shadow-2xl">
+                <img class="w-full h-full object-cover" 
+                     alt="Artisanal tailor hands measuring and hand-stitching luxurious camel wool fabric" 
+                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJ7jH0GmpR5N0KJFxENV64e6CrXshS1QVkx4eaHv3Rt7Z-zVpmQqZn6zpzb7TCb3vbtQVxpvg1lxEFnXh0NJv0ciuQyXhFAmIZgTqquJ55lX1DXIUkyQfl5y3UxC06dokSJVO-2OS0yt7019oFVfIEyC8iDQqe1giq5rsrSsGG-fzCXmwIkZUZ0ZmkKN5BPxGqYACDMv139sEh8o7LXgbJdw-9uNUMExx8Z_jScHwB7qEu8cRFFfaZ">
+              </div>
+              <div class="p-space-md bg-primary-container border border-[rgba(255,255,255,0.06)]">
+                <span class="font-label-sm text-label-sm text-[#ffca99] tracking-widest uppercase block">Hand-Crafted Protocol</span>
+                <p class="font-headline-sm text-headline-sm text-on-primary mt-space-2xs text-[#FCF9F3]">The Atelier Stitching Standard</p>
+                <p class="font-body-sm text-body-sm text-[#d4c3be] mt-space-xs">Reinforced double-fell seams ensure toddler garments withstand relentless play, while tailored blazers retain memory over decades.</p>
+              </div>
+            </div>
+
+            <div class="md:col-span-5 space-y-space-md -mt-0 md:-mt-12">
+              <div class="relative aspect-[3/4] overflow-hidden shadow-2xl">
+                <img class="w-full h-full object-cover" 
+                     alt="Candid, warm photograph of a multigenerational family laughing together outdoors in complementary organic attire" 
+                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQCaltMU8A5M7NyslGvgFidY15T9FzBogfWmCpElgnEdxCFxWc78CnZk_DyskxPTNu-J36XgBvwkKbdYAKREDMIl3mghT4h7FRi_Qu28NgylLw02_emdeqrl_7Tm6thAycMaJQMi61GYe-hCGPZvQDrW2-WwB_Q8LUYLrJvUpc-6CyiXBv3X_QuBpXRdDXM9VGygMiI0QDy_ARgxAgJrgn0VDMxR-H6F6215xSZMl595ECDWJfjQ5F">
+              </div>
+              <div class="p-space-md bg-secondary text-on-secondary" style="background-color: rgb(168, 124, 81);">
+                <p class="font-headline-sm text-headline-sm italic text-[#FCF9F3]">"One unified wardrobe. Crafted with care for the earth they will inherit."</p>
+                <p class="font-label-sm text-label-sm uppercase tracking-widest mt-space-sm opacity-90 text-[#ffdcbe]">Guimarães Workshop, 2025</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMMUNITY & VERIFIED CUSTOMER REVIEWS -->
+      <section class="w-full py-space-3xl px-margin md:px-margin-tablet lg:px-margin-desktop bg-surface-container-low" style="background-color: rgb(67, 56, 54); color: rgb(252, 249, 243);">
+        <div class="max-w-xl mx-auto text-center mb-space-2xl">
+          <div class="inline-flex items-center gap-space-2xs text-[#ffca99] font-label-sm text-label-sm uppercase tracking-widest">
+            <span class="material-symbols-outlined text-sm">verified</span>
+            <span>Patron Voices</span>
+          </div>
+          <h2 class="font-headline-xl text-headline-xl text-[#FCF9F3] mt-space-2xs">Shared In Quiet Luxury</h2>
+          <p class="font-body-md text-body-md text-[#EBE6DF] mt-space-xs">Over 18,000 discerning families worldwide rely on Atelier &amp; Co. for foundational apparel.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+          <!-- Review 1 -->
+          <div class="p-space-lg shadow-sm flex flex-col justify-between" style="background-color: rgb(52, 43, 41); border: 1px solid rgba(255, 255, 255, 0.08);">
+            <div>
+              <div class="flex items-center gap-1 text-[#ffca99] mb-space-sm">
+                <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+              <p class="font-headline-sm text-headline-sm text-[#FCF9F3] italic leading-snug">"The double-cloth trench coat has the structure of Savile Row and the weightlessness of a morning robe. Perfection."</p>
+              <p class="font-body-sm text-body-sm text-[#EBE6DF] mt-space-md">I purchased the Camel tone coat and the matching toddler romper for my daughter. The tactile organic cotton on her romper is so soft against eczema-prone skin.</p>
+            </div>
+            <div class="pt-space-lg flex items-center justify-between">
+              <div>
+                <p class="font-label-md text-label-md text-[#FCF9F3] font-semibold">Eleanor Vance-Sterling</p>
+                <p class="font-label-sm text-label-sm text-[#d4c3be] uppercase tracking-wider">New York, NY • Verified Purchaser</p>
+              </div>
+              <span class="material-symbols-outlined text-[#d4c3be] text-2xl">format_quote</span>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="p-space-lg shadow-sm flex flex-col justify-between" style="background-color: rgb(52, 43, 41); border: 1px solid rgba(255, 255, 255, 0.08);">
+            <div>
+              <div class="flex items-center gap-1 text-[#ffca99] mb-space-sm">
+                <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+              <p class="font-headline-sm text-headline-sm text-[#FCF9F3] italic leading-snug">"The Espresso knit has become my everyday uniform. Incredible yarn tension with zero synthetic blends."</p>
+              <p class="font-body-sm text-body-sm text-[#EBE6DF] mt-space-md">Most luxury menswear knitwear pilled after three wears. Atelier's Scottish wool retains its pristine dense weave through seasonal shifts.</p>
+            </div>
+            <div class="pt-space-lg flex items-center justify-between">
+              <div>
+                <p class="font-label-md text-label-md text-[#FCF9F3] font-semibold">Marcus Lindqvist</p>
+                <p class="font-label-sm text-label-sm text-[#d4c3be] uppercase tracking-wider">Stockholm, SE • Verified Purchaser</p>
+              </div>
+              <span class="material-symbols-outlined text-[#d4c3be] text-2xl">format_quote</span>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="p-space-lg shadow-sm flex flex-col justify-between" style="background-color: rgb(52, 43, 41); border: 1px solid rgba(255, 255, 255, 0.08);">
+            <div>
+              <div class="flex items-center gap-1 text-[#ffca99] mb-space-sm">
+                <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+              <p class="font-headline-sm text-headline-sm text-[#FCF9F3] italic leading-snug">"The miniature trench coat passed from our eldest boy to our toddler daughter looking brand new."</p>
+              <p class="font-body-sm text-body-sm text-[#EBE6DF] mt-space-md">True heirloom tailoring for children. Washing instructions are seamless and the natural earthen tones look so harmonious in family portraits.</p>
+            </div>
+            <div class="pt-space-lg flex items-center justify-between">
+              <div>
+                <p class="font-label-md text-label-md text-[#FCF9F3] font-semibold">Claire &amp; Julien Dubois</p>
+                <p class="font-label-sm text-label-sm text-[#d4c3be] uppercase tracking-wider">Geneva, CH • Verified Purchaser</p>
+              </div>
+              <span class="material-symbols-outlined text-[#d4c3be] text-2xl">format_quote</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CURATED EDITORIAL CALLOUT BANNER / VIP ATELIER CLUB -->
+      <section class="w-full px-margin md:px-margin-tablet lg:px-margin-desktop py-space-2xl">
+        <div class="relative bg-surface-container p-space-xl md:p-space-2xl overflow-hidden flex flex-col md:flex-row items-center justify-between gap-space-xl" style="background-color: rgb(63, 53, 51); border: 1px solid rgba(255, 255, 255, 0.08);">
+          <div class="space-y-space-sm max-w-xl">
+            <span class="font-label-sm text-label-sm text-[#ffca99] uppercase tracking-widest block">Private Client Salon</span>
+            <h3 class="font-headline-lg text-headline-lg text-[#FCF9F3] leading-tight">Seasonal Capsule Pre-Allocations &amp; Tailoring Appointments</h3>
+            <p class="font-body-sm text-body-sm text-[#EBE6DF]">Members receive preview access to limited-yardage runs 72 hours before international release, with complimentary monogramming across toddler and adult outerwear.</p>
+          </div>
+          <div class="flex flex-col sm:flex-row items-center gap-space-sm w-full md:w-auto">
+            <button class="w-full sm:w-auto px-space-xl py-space-sm font-label-md text-label-md uppercase tracking-widest text-center transition-colors font-semibold" 
+                    style="background-color: #ffca99; color: #2b211e;" 
+                    onclick="openStylistModal()">
+              Join Atelier Salon
+            </button>
+            <button class="w-full sm:w-auto bg-transparent text-[#FCF9F3] hover:text-[#ffca99] px-space-lg py-space-sm font-label-md text-label-md uppercase tracking-wider text-center transition-colors underline underline-offset-4" 
+                    onclick="openStylistModal()">
+              Book Stylist
+            </button>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- LUXURY FOOTER -->
+  <footer class="w-full bg-surface-container-low mt-space-3xl shadow-[0_-1px_8px_rgba(0,0,0,0.02)]" style="background-color: rgb(53, 44, 42); color: rgb(252, 249, 243); border-top: 1px solid rgba(255, 255, 255, 0.08);">
+    <div class="w-full px-margin md:px-margin-tablet lg:px-margin-desktop py-space-3xl">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-gutter-desktop mb-space-3xl">
+        <!-- Brand & Newsletter -->
+        <div class="lg:col-span-2 space-y-space-md">
+          <span class="font-headline-sm text-headline-sm uppercase tracking-tight text-[#FCF9F3]">ATELIER &amp; CO.</span>
+          <p class="font-body-sm text-body-sm text-[#EBE6DF] max-w-sm">Crafted with reverence for materials and timeless silhouettes. Receive private seasonal collection invitations and editorial narratives directly to your inbox.</p>
+          
+          <form id="newsletterForm" class="flex max-w-md items-center">
+            <input id="newsletterEmailInput"
+                   class="flex-1 bg-[#2b211e] px-space-md py-space-sm font-body-sm text-body-sm text-[#FCF9F3] placeholder:text-[#d4c3be] outline-none rounded-none border border-[rgba(255,255,255,0.1)] focus:border-[#ffca99]" 
+                   placeholder="Enter your email address" 
+                   type="email" 
+                   required>
+            <button id="newsletterSubmitBtn"
+                    class="bg-[#ffca99] text-[#2b211e] hover:bg-[#f0bd8d] px-space-lg py-space-sm font-label-md text-label-md uppercase tracking-widest transition-colors font-semibold" 
+                    type="submit">
+              Subscribe
+            </button>
+          </form>
+        </div>
+
+        <!-- Client Care -->
+        <div>
+          <h4 class="font-label-md text-label-md uppercase tracking-wider text-[#FCF9F3] mb-space-md">Client Care</h4>
+          <ul class="space-y-space-xs font-body-sm text-body-sm text-[#EBE6DF]">
+            <li><a class="hover:text-[#ffca99] transition-colors cursor-pointer" onclick="openStylistModal()">Bespoke Consultations</a></li>
+            <li><a class="hover:text-[#ffca99] transition-colors cursor-pointer" onclick="openManifestoModal()">Complimentary Shipping</a></li>
+            <li><a class="hover:text-[#ffca99] transition-colors cursor-pointer" onclick="showToast('Order Status', 'Enter your order reference in the chat dialog.', 'inventory_2')">Order Tracking</a></li>
+            <li><a class="hover:text-[#ffca99] transition-colors cursor-pointer" onclick="showToast('Returns & Exchanges', 'Complimentary 30-day global returns on all unworn items.', 'sync_alt')">Returns &amp; Exchanges</a></li>
+            <li><a class="hover:text-[#ffca99] transition-colors cursor-pointer" onclick="showToast('Garment Preservation', 'Specialist cedar blocks and organic wool wash guide sent with every parcel.', 'dry_cleaning')">Garment Preservation</a></li>
+          </ul>
+        </div>
+
+        <!-- Maison -->
+        <div>
+          <h4 class="font-label-md text-label-md uppercase tracking-wider text-[#FCF9F3] mb-space-md">Maison</h4>
+          <ul class="space-y-space-xs font-body-sm text-body-sm text-[#EBE6DF]">
+            <li><a class="hover:text-[#ffca99] transition-colors cursor-pointer" onclick="openManifestoModal()">Sustainability Pledge</a></li>
+            <li><a class="hover:text-[#ffca99] transition-colors cursor-pointer" onclick="openManifestoModal()">Our Heritage &amp; Artisans</a></li>
+            <li><a class="hover:text-[#ffca99] transition-colors cursor-pointer" onclick="openStylistModal()">Store Locator &amp; Ateliers</a></li>
+            <li><a class="hover:text-[#ffca99] transition-colors cursor-pointer" onclick="openLookbookModal()">Press &amp; Publications</a></li>
+            <li><a class="hover:text-[#ffca99] transition-colors cursor-pointer" onclick="showToast('Careers', 'Current openings in Milan, London and Guimarães ateliers.', 'work')">Careers</a></li>
+          </ul>
+        </div>
+
+        <!-- Flagships -->
+        <div>
+          <h4 class="font-label-md text-label-md uppercase tracking-wider text-[#FCF9F3] mb-space-md">Flagships</h4>
+          <div class="space-y-space-sm font-body-sm text-body-sm text-[#EBE6DF]">
+            <p><span class="font-medium text-[#FCF9F3] block">Madison Avenue</span>740 Madison Ave, New York</p>
+            <p><span class="font-medium text-[#FCF9F3] block">Rue Saint-Honoré</span>228 Rue Saint-Honoré, Paris</p>
+            <p><span class="font-medium text-[#FCF9F3] block">Mayfair</span>14 Albemarle St, London</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Legal & Payments -->
+      <div class="pt-space-xl flex flex-col md:flex-row items-center justify-between gap-space-md text-[#d4c3be] border-t border-[rgba(255,255,255,0.08)]">
+        <div class="flex flex-wrap items-center gap-space-lg font-label-sm text-label-sm uppercase tracking-widest">
+          <p>© 2025 ATIF STORE / ATELIER &amp; CO. ALL RIGHTS RESERVED.</p>
+          <a class="hover:text-[#FCF9F3] transition-colors cursor-pointer" onclick="showToast('Privacy Policy', 'Zero data brokerage. 100% patron confidentiality.', 'shield')">Privacy Policy</a>
+          <a class="hover:text-[#FCF9F3] transition-colors cursor-pointer" onclick="showToast('Terms of Service', 'Governed under European & International Sartorial Standards.', 'gavel')">Terms of Service</a>
+          <a class="hover:text-[#FCF9F3] transition-colors cursor-pointer" onclick="showToast('Accessibility', 'AA Certified contrast compliance.', 'accessibility')">Accessibility</a>
+        </div>
+        <div class="flex items-center gap-space-md font-label-sm text-label-sm text-[#d4c3be]">
+          <span class="material-symbols-outlined text-lg">credit_card</span>
+          <span>VISA</span>
+          <span>MASTERCARD</span>
+          <span>AMEX</span>
+          <span>APPLE PAY</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================== -->
+  <!-- MODALS & DRAWERS (HIGH LUXURY MICRO-INTERACTIONS) -->
+  <!-- ============================================== -->
+
+  <!-- 1. SLIDE-OUT SHOPPING BAG DRAWER -->
+  <div id="cartDrawer" class="drawer-backdrop fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex justify-end">
+    <div class="drawer-panel w-full max-w-md h-full bg-[#342b29] border-l border-[rgba(255,255,255,0.1)] flex flex-col justify-between shadow-2xl p-6 overflow-y-auto">
+      <div>
+        <!-- Drawer Header -->
+        <div class="flex items-center justify-between pb-4 border-b border-[rgba(255,255,255,0.08)]">
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-[#ffca99]">shopping_bag</span>
+            <h3 class="font-headline-sm text-headline-sm uppercase tracking-wider text-[#FCF9F3]">Shopping Bag</h3>
+          </div>
+          <button class="p-1 text-[#d4c3be] hover:text-[#ffca99] transition-colors" onclick="toggleCart(false)" aria-label="Close Bag">
+            <span class="material-symbols-outlined text-xl">close</span>
+          </button>
+        </div>
+
+        <!-- Free Shipping Meter -->
+        <div class="mt-4 p-3 bg-[#2b211e] border border-[rgba(255,255,255,0.06)]">
+          <p id="shippingProgressText" class="font-label-sm text-xs text-[#d4c3be] mb-2">
+            Complimentary Worldwide Shipping on orders over $150
+          </p>
+          <div class="w-full bg-[#3f3533] h-1.5 rounded-full overflow-hidden">
+            <div id="shippingProgressBar" class="shipping-progress h-full transition-all duration-500" style="width: 100%;"></div>
+          </div>
+        </div>
+
+        <!-- Cart Items List -->
+        <div id="cartItemsList" class="mt-4 space-y-2">
+          <!-- Rendered dynamically -->
+        </div>
+
+        <!-- Promo Code Accordion/Input -->
+        <div class="mt-6 pt-4 border-t border-[rgba(255,255,255,0.08)]">
+          <label class="font-label-sm text-xs text-[#d4c3be] uppercase tracking-wider block mb-2">Promotional Code</label>
+          <div class="flex">
+            <input id="cartPromoInput" type="text" placeholder="Enter ATELIER" class="flex-1 bg-[#2b211e] border border-[rgba(255,255,255,0.15)] px-3 py-2 font-body-sm text-sm text-[#FCF9F3] uppercase placeholder:text-[#807571] outline-none focus:border-[#ffca99]">
+            <button class="px-4 bg-[#504441] text-[#FCF9F3] hover:bg-[#ffca99] hover:text-[#2b211e] font-label-sm text-xs uppercase tracking-wider font-semibold transition-colors" onclick="applyPromoCode()">
+              Apply
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Drawer Footer Totals & Checkout -->
+      <div class="pt-6 border-t border-[rgba(255,255,255,0.08)] space-y-3">
+        <div class="flex justify-between font-body-sm text-sm text-[#d4c3be]">
+          <span>Subtotal</span>
+          <span id="cartSubtotal" class="text-[#FCF9F3] font-medium">$0.00</span>
+        </div>
+        <div id="cartDiscountRow" class="flex justify-between font-body-sm text-sm text-[#ffca99]" style="display: none;">
+          <span>Privilege Promo (15% Off)</span>
+          <span id="cartDiscount">-$0.00</span>
+        </div>
+        <div class="flex justify-between font-body-sm text-sm text-[#d4c3be]">
+          <span>Worldwide Shipping</span>
+          <span id="cartShipping" class="text-[#FCF9F3]">Complimentary</span>
+        </div>
+        <div class="flex justify-between font-headline-sm text-lg text-[#FCF9F3] pt-2 border-t border-[rgba(255,255,255,0.08)]">
+          <span>Estimated Total</span>
+          <span id="cartGrandTotal" class="text-[#ffca99]">$0.00</span>
+        </div>
+
+        <button class="w-full py-3.5 bg-[#ffca99] text-[#2b211e] hover:bg-[#f0bd8d] font-label-md text-label-md uppercase tracking-widest font-semibold transition-all shadow-lg flex items-center justify-center gap-2" onclick="openCheckoutModal()">
+          <span>Proceed To Checkout</span>
+          <span class="material-symbols-outlined text-sm">arrow_forward</span>
+        </button>
+
+        <p class="font-label-sm text-[10px] text-center text-[#d4c3be] uppercase tracking-wider">
+          🔒 Secure 256-Bit Encrypted Atelier Dispatch
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. SLIDE-OUT WISHLIST DRAWER -->
+  <div id="wishlistDrawer" class="drawer-backdrop fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex justify-end">
+    <div class="drawer-panel w-full max-w-md h-full bg-[#342b29] border-l border-[rgba(255,255,255,0.1)] flex flex-col justify-between shadow-2xl p-6 overflow-y-auto">
+      <div>
+        <div class="flex items-center justify-between pb-4 border-b border-[rgba(255,255,255,0.08)]">
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-[#ffca99]">favorite</span>
+            <h3 class="font-headline-sm text-headline-sm uppercase tracking-wider text-[#FCF9F3]">Private Wishlist</h3>
+          </div>
+          <button class="p-1 text-[#d4c3be] hover:text-[#ffca99] transition-colors" onclick="toggleWishlistDrawer(false)" aria-label="Close Wishlist">
+            <span class="material-symbols-outlined text-xl">close</span>
+          </button>
+        </div>
+
+        <div id="wishlistItemsList" class="mt-4 space-y-2">
+          <!-- Rendered dynamically -->
+        </div>
+      </div>
+
+      <div class="pt-6 border-t border-[rgba(255,255,255,0.08)]">
+        <button class="w-full py-3 border border-[#ffca99] text-[#ffca99] hover:bg-[#ffca99] hover:text-[#2b211e] font-label-md text-label-md uppercase tracking-wider transition-colors" onclick="toggleWishlistDrawer(false)">
+          Continue Perusing
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. PRODUCT QUICK VIEW & QUICK ADD MODAL -->
+  <div id="quickViewModal" class="drawer-backdrop fixed inset-0 z-50 bg-black/70 backdrop-blur-md flex items-center justify-center p-4">
+    <div class="modal-dialog bg-[#342b29] border border-[rgba(255,255,255,0.12)] max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl relative">
+      <button class="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-[#2b211e]/80 text-[#FCF9F3] hover:text-[#ffca99] flex items-center justify-center transition-colors" onclick="closeQuickView()">
+        <span class="material-symbols-outlined text-lg">close</span>
+      </button>
+
+      <div class="grid grid-cols-1 md:grid-cols-2">
+        <!-- Image Area -->
+        <div class="relative bg-[#2b211e] aspect-[3/4] md:aspect-auto">
+          <img id="qvImage" src="" alt="Product" class="w-full h-full object-cover">
+          <span id="qvBadge" class="absolute top-4 left-4 font-label-sm text-xs uppercase tracking-wider px-2 py-1 font-semibold">
+            Bestseller
+          </span>
+        </div>
+
+        <!-- Details Area -->
+        <div class="p-6 md:p-8 flex flex-col justify-between space-y-6">
+          <div>
+            <p id="qvDept" class="font-label-sm text-xs text-[#d4c3be] uppercase tracking-wider">Department</p>
+            <h3 id="qvTitle" class="font-headline-md text-headline-md text-[#FCF9F3] mt-1">Title</h3>
+            
+            <div class="flex items-center gap-3 mt-2">
+              <span id="qvPrice" class="font-body-lg text-lg text-[#ffca99] font-medium">$0.00</span>
+              <div class="flex items-center gap-1 text-[#ffca99] text-xs">
+                <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span id="qvRating" class="font-semibold text-[#FCF9F3]">5.0</span>
+                <span id="qvReviews" class="text-[#d4c3be]">(120)</span>
+              </div>
+            </div>
+
+            <p id="qvDescription" class="font-body-sm text-body-sm text-[#EBE6DF] mt-4 leading-relaxed">
+              Description...
+            </p>
+
+            <div class="mt-4 p-3 bg-[#2b211e] border border-[rgba(255,255,255,0.06)] text-xs text-[#d4c3be]">
+              <span class="text-[#ffca99] font-semibold uppercase block tracking-wider mb-1">Textile Memory</span>
+              <p id="qvComposition">100% Mongolian Cashmere</p>
+            </div>
+
+            <!-- Color Palette Selector -->
+            <div class="mt-5">
+              <label class="font-label-sm text-xs text-[#d4c3be] uppercase tracking-wider block mb-2">
+                Color Palette: <span id="qvColorLabel" class="text-[#FCF9F3]">Camel</span>
+              </label>
+              <div id="qvSwatches" class="flex items-center gap-2"></div>
+            </div>
+
+            <!-- Size Selector -->
+            <div class="mt-5">
+              <label class="font-label-sm text-xs text-[#d4c3be] uppercase tracking-wider block mb-2">
+                Silhouette Size
+              </label>
+              <div id="qvSizes" class="flex flex-wrap gap-2"></div>
+            </div>
+          </div>
+
+          <!-- Add to Bag Controls -->
+          <div class="pt-4 border-t border-[rgba(255,255,255,0.08)] flex items-center gap-3">
+            <div class="inline-flex items-center border border-[rgba(255,255,255,0.2)] bg-[#2b211e] h-12">
+              <button class="px-3 text-[#FCF9F3] hover:text-[#ffca99]" onclick="document.getElementById('qvQtyInput').stepDown()">-</button>
+              <input id="qvQtyInput" type="number" min="1" max="10" value="1" class="w-10 bg-transparent text-center font-body-sm text-sm text-[#FCF9F3] outline-none">
+              <button class="px-3 text-[#FCF9F3] hover:text-[#ffca99]" onclick="document.getElementById('qvQtyInput').stepUp()">+</button>
+            </div>
+            
+            <button class="flex-1 h-12 bg-[#ffca99] text-[#2b211e] hover:bg-[#f0bd8d] font-label-md text-label-md uppercase tracking-wider font-semibold transition-colors flex items-center justify-center gap-2" onclick="addModalToCart()">
+              <span class="material-symbols-outlined text-base">shopping_bag</span>
+              <span>Add To Shopping Bag</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. LIVE SEARCH & COMMAND PALETTE (⌘K / Ctrl+K) -->
+  <div id="searchModal" class="drawer-backdrop fixed inset-0 z-50 bg-black/75 backdrop-blur-md flex items-start justify-center pt-20 p-4">
+    <div class="modal-dialog bg-[#342b29] border border-[rgba(255,255,255,0.12)] max-w-2xl w-full shadow-2xl overflow-hidden">
+      <div class="p-4 border-b border-[rgba(255,255,255,0.08)] flex items-center gap-3 bg-[#2b211e]">
+        <span class="material-symbols-outlined text-[#ffca99] text-xl">search</span>
+        <input id="commandSearchInput" 
+               type="text" 
+               placeholder="Search by fiber, garment name, or tone (e.g. Camel, Trench, Knit)..." 
+               class="flex-1 bg-transparent border-0 outline-none font-body-md text-body-md text-[#FCF9F3] placeholder:text-[#807571]"
+               oninput="handleSearchQuery(this.value)">
+        <kbd class="font-label-sm text-xs text-[#d4c3be] bg-[#3f3533] px-2 py-1 rounded">ESC</kbd>
+      </div>
+
+      <!-- Instant Suggestions Tags -->
+      <div class="px-4 py-2 bg-[#2b211e]/50 border-b border-[rgba(255,255,255,0.05)] flex items-center gap-2 overflow-x-auto text-xs text-[#d4c3be]">
+        <span class="uppercase tracking-widest text-[10px] text-[#ffca99]">Curations:</span>
+        <button class="px-2 py-0.5 bg-[#3f3533] hover:bg-[#504441] text-[#FCF9F3]" onclick="document.getElementById('commandSearchInput').value='Trench'; handleSearchQuery('Trench')">Trench Coats</button>
+        <button class="px-2 py-0.5 bg-[#3f3533] hover:bg-[#504441] text-[#FCF9F3]" onclick="document.getElementById('commandSearchInput').value='Cashmere'; handleSearchQuery('Cashmere')">Cashmere</button>
+        <button class="px-2 py-0.5 bg-[#3f3533] hover:bg-[#504441] text-[#FCF9F3]" onclick="document.getElementById('commandSearchInput').value='Romper'; handleSearchQuery('Romper')">Organic Toddler</button>
+        <button class="px-2 py-0.5 bg-[#3f3533] hover:bg-[#504441] text-[#FCF9F3]" onclick="document.getElementById('commandSearchInput').value='Espresso'; handleSearchQuery('Espresso')">Espresso Hues</button>
+      </div>
+
+      <!-- Search Results Area -->
+      <div id="searchResults" class="max-h-[60vh] overflow-y-auto divide-y divide-[rgba(255,255,255,0.05)]">
+        <!-- Live search cards populated here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. CHECKOUT STEP-BY-STEP MODAL -->
+  <div id="checkoutModal" class="drawer-backdrop fixed inset-0 z-50 bg-black/75 backdrop-blur-md flex items-center justify-center p-4">
+    <div class="modal-dialog bg-[#342b29] border border-[rgba(255,255,255,0.12)] max-w-xl w-full p-6 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+      <button class="absolute top-4 right-4 text-[#d4c3be] hover:text-[#ffca99]" onclick="closeCheckoutModal()">
+        <span class="material-symbols-outlined text-xl">close</span>
+      </button>
+
+      <div class="flex items-center gap-2 mb-4">
+        <span class="material-symbols-outlined text-[#ffca99]">lock</span>
+        <h3 class="font-headline-sm text-headline-sm uppercase tracking-wider text-[#FCF9F3]">Atelier Checkout</h3>
+      </div>
+
+      <!-- Stepper Tabs -->
+      <div class="flex border-b border-[rgba(255,255,255,0.1)] mb-6 text-xs uppercase tracking-wider font-label-sm">
+        <div id="checkoutStepTab1" class="checkout-step-tab pb-2 px-3 border-b-2 border-[#ffca99] text-[#ffca99] font-semibold">1. Shipping</div>
+        <div id="checkoutStepTab2" class="checkout-step-tab pb-2 px-3 border-b-2 border-transparent text-[#d4c3be]">2. Payment</div>
+        <div id="checkoutStepTab3" class="checkout-step-tab pb-2 px-3 border-b-2 border-transparent text-[#d4c3be]">3. Confirmation</div>
+      </div>
+
+      <!-- Step 1: Shipping Details -->
+      <div id="checkoutStep1" class="checkout-step-pane space-y-4">
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="font-label-sm text-xs text-[#d4c3be] block mb-1">First Name</label>
+            <input id="checkoutFirstName" type="text" value="Eleanor" class="w-full bg-[#2b211e] border border-[rgba(255,255,255,0.15)] px-3 py-2 text-sm text-[#FCF9F3] outline-none focus:border-[#ffca99]">
+          </div>
+          <div>
+            <label class="font-label-sm text-xs text-[#d4c3be] block mb-1">Last Name</label>
+            <input id="checkoutLastName" type="text" value="Vance" class="w-full bg-[#2b211e] border border-[rgba(255,255,255,0.15)] px-3 py-2 text-sm text-[#FCF9F3] outline-none focus:border-[#ffca99]">
+          </div>
+        </div>
+
+        <div>
+          <label class="font-label-sm text-xs text-[#d4c3be] block mb-1">Email for Dispatch Tracking</label>
+          <input id="checkoutEmail" type="email" value="eleanor.vance@atelier-patron.com" class="w-full bg-[#2b211e] border border-[rgba(255,255,255,0.15)] px-3 py-2 text-sm text-[#FCF9F3] outline-none focus:border-[#ffca99]">
+        </div>
+
+        <div>
+          <label class="font-label-sm text-xs text-[#d4c3be] block mb-1">Shipping Address</label>
+          <input id="checkoutAddress" type="text" value="740 Park Avenue, Apt 11B" class="w-full bg-[#2b211e] border border-[rgba(255,255,255,0.15)] px-3 py-2 text-sm text-[#FCF9F3] outline-none focus:border-[#ffca99]">
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="font-label-sm text-xs text-[#d4c3be] block mb-1">City</label>
+            <input id="checkoutCity" type="text" value="New York" class="w-full bg-[#2b211e] border border-[rgba(255,255,255,0.15)] px-3 py-2 text-sm text-[#FCF9F3] outline-none focus:border-[#ffca99]">
+          </div>
+          <div>
+            <label class="font-label-sm text-xs text-[#d4c3be] block mb-1">Postal Code</label>
+            <input id="checkoutZip" type="text" value="10021" class="w-full bg-[#2b211e] border border-[rgba(255,255,255,0.15)] px-3 py-2 text-sm text-[#FCF9F3] outline-none focus:border-[#ffca99]">
+          </div>
+        </div>
+
+        <button class="w-full mt-4 py-3 bg-[#ffca99] text-[#2b211e] font-label-md text-label-md uppercase tracking-wider font-semibold hover:bg-[#f0bd8d] transition-colors" onclick="setCheckoutStep(2)">
+          Continue to Payment
+        </button>
+      </div>
+
+      <!-- Step 2: Payment Details -->
+      <div id="checkoutStep2" class="checkout-step-pane space-y-4" style="display: none;">
+        <div class="p-3 bg-[#2b211e] border border-[#ffca99]/30 flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-[#ffca99]">verified_user</span>
+            <span class="font-label-sm text-xs text-[#FCF9F3] uppercase tracking-wider">Verified Secure Payment</span>
+          </div>
+          <span class="font-label-sm text-xs text-[#d4c3be]">Apple Pay / Visa / Amex</span>
+        </div>
+
+        <div>
+          <label class="font-label-sm text-xs text-[#d4c3be] block mb-1">Card Number</label>
+          <input type="text" value="•••• •••• •••• 4829" class="w-full bg-[#2b211e] border border-[rgba(255,255,255,0.15)] px-3 py-2 text-sm text-[#FCF9F3] outline-none focus:border-[#ffca99]">
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="font-label-sm text-xs text-[#d4c3be] block mb-1">Expiration Date</label>
+            <input type="text" value="11 / 28" class="w-full bg-[#2b211e] border border-[rgba(255,255,255,0.15)] px-3 py-2 text-sm text-[#FCF9F3] outline-none focus:border-[#ffca99]">
+          </div>
+          <div>
+            <label class="font-label-sm text-xs text-[#d4c3be] block mb-1">CVC Code</label>
+            <input type="text" value="•••" class="w-full bg-[#2b211e] border border-[rgba(255,255,255,0.15)] px-3 py-2 text-sm text-[#FCF9F3] outline-none focus:border-[#ffca99]">
+          </div>
+        </div>
+
+        <div class="flex gap-3 mt-4">
+          <button class="px-4 py-3 bg-[#3f3533] text-[#FCF9F3] font-label-md text-xs uppercase tracking-wider" onclick="setCheckoutStep(1)">
+            Back
+          </button>
+          <button class="flex-1 py-3 bg-[#ffca99] text-[#2b211e] font-label-md text-label-md uppercase tracking-wider font-semibold hover:bg-[#f0bd8d] transition-colors" onclick="setCheckoutStep(3)">
+            Authorize &amp; Complete Order
+          </button>
+        </div>
+      </div>
+
+      <!-- Step 3: Order Confirmation -->
+      <div id="checkoutStep3" class="checkout-step-pane text-center py-6 space-y-4" style="display: none;">
+        <div class="w-16 h-16 rounded-full bg-[#ffca99] text-[#2b211e] flex items-center justify-center mx-auto shadow-xl">
+          <span class="material-symbols-outlined text-3xl">check</span>
+        </div>
+        <h4 class="font-headline-md text-headline-md text-[#FCF9F3]">Bespoke Order Allocated</h4>
+        <p class="font-body-sm text-body-sm text-[#d4c3be] max-w-sm mx-auto">
+          Thank you for patronizing Atelier &amp; Co. Your garments are now being prepared with tissue wrapping and horn preservation seals.
+        </p>
+
+        <div class="p-4 bg-[#2b211e] max-w-xs mx-auto border border-[rgba(255,255,255,0.08)]">
+          <span class="font-label-sm text-xs text-[#d4c3be] uppercase tracking-wider block">Order Reference</span>
+          <p id="orderNumberDisplay" class="font-headline-sm text-lg text-[#ffca99] font-bold mt-1">ATF-829104</p>
+          <span class="font-label-sm text-[10px] text-[#807571] uppercase tracking-widest block mt-1">Estimated Dispatch: 48 Hours</span>
+        </div>
+
+        <button class="px-6 py-2.5 bg-[#ffca99] text-[#2b211e] font-label-md text-label-md uppercase tracking-wider font-semibold hover:bg-[#f0bd8d] transition-colors" onclick="closeCheckoutModal()">
+          Return to Sanctuary Store
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6. BOOK STYLIST / SALON APPOINTMENT MODAL -->
+  <div id="stylistModal" class="drawer-backdrop fixed inset-0 z-50 bg-black/75 backdrop-blur-md flex items-center justify-center p-4">
+    <div class="modal-dialog bg-[#342b29] border border-[rgba(255,255,255,0.12)] max-w-lg w-full p-6 shadow-2xl relative">
+      <button class="absolute top-4 right-4 text-[#d4c3be] hover:text-[#ffca99]" onclick="closeStylistModal()">
+        <span class="material-symbols-outlined text-xl">close</span>
+      </button>
+
+      <div class="flex items-center gap-2 mb-2">
+        <span class="material-symbols-outlined text-[#ffca99]">architecture</span>
+        <h3 class="font-headline-sm text-headline-sm uppercase tracking-wider text-[#FCF9F3]">Private Salon Appointment</h3>
+      </div>
+      <p class="font-body-sm text-xs text-[#d4c3be] mb-6">
+        Reserve dedicated time with a master sartorialist at one of our flagships or virtually.
+      </p>
+
+      <form id="stylistBookingForm" onsubmit="confirmStylistBooking(event)" class="space-y-4">
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="font-label-sm text-xs text-[#d4c3be] uppercase tracking-wider block mb-1">Patron Name *</label>
+            <input id="stylistName" type="text" placeholder="e.g. Eleanor Vance" required class="w-full bg-[#2b211e] border border-[rgba(255,255,255,0.15)] px-3 py-2 text-sm text-[#FCF9F3] outline-none focus:border-[#ffca99]">
+          </div>
+          <div>
+            <label class="font-label-sm text-xs text-[#d4c3be] uppercase tracking-wider block mb-1">Email Address *</label>
+            <input id="stylistEmail" type="email" placeholder="eleanor@atelier.com" required class="w-full bg-[#2b211e] border border-[rgba(255,255,255,0.15)] px-3 py-2 text-sm text-[#FCF9F3] outline-none focus:border-[#ffca99]">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="font-label-sm text-xs text-[#d4c3be] uppercase tracking-wider block mb-1">Telephone / WhatsApp</label>
+            <input id="stylistPhone" type="tel" placeholder="+1 (555) 019-2834" class="w-full bg-[#2b211e] border border-[rgba(255,255,255,0.15)] px-3 py-2 text-sm text-[#FCF9F3] outline-none focus:border-[#ffca99]">
+          </div>
+          <div>
+            <label class="font-label-sm text-xs text-[#d4c3be] uppercase tracking-wider block mb-1">Preferred Date</label>
+            <input id="stylistDate" type="date" value="2025-11-05" class="w-full bg-[#2b211e] border border-[rgba(255,255,255,0.15)] px-3 py-2 text-sm text-[#FCF9F3] outline-none focus:border-[#ffca99]">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="font-label-sm text-xs text-[#d4c3be] uppercase tracking-wider block mb-1">Maison Flagship</label>
+            <select id="stylistFlagship" class="w-full bg-[#2b211e] border border-[rgba(255,255,255,0.15)] px-3 py-2 text-sm text-[#FCF9F3] outline-none focus:border-[#ffca99]">
+              <option>740 Madison Avenue — New York</option>
+              <option>228 Rue Saint-Honoré — Paris</option>
+              <option>14 Albemarle Street — Mayfair London</option>
+              <option>Virtual Bespoke Consultation (Worldwide)</option>
+            </select>
+          </div>
+          <div>
+            <label class="font-label-sm text-xs text-[#d4c3be] uppercase tracking-wider block mb-1">Curator</label>
+            <select id="stylistCurator" class="w-full bg-[#2b211e] border border-[rgba(255,255,255,0.15)] px-3 py-2 text-sm text-[#FCF9F3] outline-none focus:border-[#ffca99]">
+              <option>Elena Rossi (Family Wardrobe)</option>
+              <option>Laurent Mercier (Outerwear &amp; Wool)</option>
+              <option>First Available Sartorialist</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label class="font-label-sm text-xs text-[#d4c3be] uppercase tracking-wider block mb-1">Wardrobe Notes &amp; Measurements</label>
+          <textarea id="stylistNotes" rows="3" placeholder="Specify outerwear sizing, toddler age groups, bespoke tailoring cuts, or custom monogram requests..." class="w-full bg-[#2b211e] border border-[rgba(255,255,255,0.15)] px-3 py-2 text-sm text-[#FCF9F3] outline-none focus:border-[#ffca99] placeholder:text-[#807571]"></textarea>
+        </div>
+
+        <button id="stylistSubmitBtn" type="submit" class="w-full py-3 bg-[#ffca99] text-[#2b211e] font-label-md text-label-md uppercase tracking-wider font-semibold hover:bg-[#f0bd8d] transition-colors flex items-center justify-center gap-2">
+          <span>Confirm Salon Reservation</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- 7. TRANSPARENCY MANIFESTO MODAL -->
+  <div id="manifestoModal" class="drawer-backdrop fixed inset-0 z-50 bg-black/75 backdrop-blur-md flex items-center justify-center p-4">
+    <div class="modal-dialog bg-[#342b29] border border-[rgba(255,255,255,0.12)] max-w-2xl w-full p-8 shadow-2xl relative max-h-[85vh] overflow-y-auto">
+      <button class="absolute top-4 right-4 text-[#d4c3be] hover:text-[#ffca99]" onclick="closeManifestoModal()">
+        <span class="material-symbols-outlined text-xl">close</span>
+      </button>
+
+      <span class="font-label-sm text-xs text-[#ffca99] uppercase tracking-widest block mb-1">Maison Ethos</span>
+      <h3 class="font-headline-lg text-headline-lg text-[#FCF9F3]">The Transparency Manifesto</h3>
+      
+      <div class="space-y-4 font-body-sm text-body-sm text-[#EBE6DF] mt-4 leading-relaxed">
+        <p>
+          We do not participate in fast consumer cycles. Atelier &amp; Co. was established on the conviction that clothing worn close to human bodies should be pure, uncompromised, and resilient enough to be passed to future generations.
+        </p>
+        <div class="p-4 bg-[#2b211e] border-l-2 border-[#ffca99]">
+          <h5 class="font-headline-sm text-sm text-[#FCF9F3] uppercase tracking-wider">Zero Azo Dye Certification</h5>
+          <p class="mt-1 text-xs text-[#d4c3be]">All colorations across our Autumn Neutrality capsule are derived from unbleached natural animal hairs and plant-based bath infusions in northern Portugal.</p>
+        </div>
+        <div class="p-4 bg-[#2b211e] border-l-2 border-[#ffca99]">
+          <h5 class="font-headline-sm text-sm text-[#FCF9F3] uppercase tracking-wider">Family Longevity Protocol</h5>
+          <p class="mt-1 text-xs text-[#d4c3be]">If a toddler romper outgrows your youngest child, return it to any flagship. We professionally comb, repair, and re-allocate it through our Archival Resale program.</p>
+        </div>
+      </div>
+
+      <div class="mt-6 pt-4 border-t border-[rgba(255,255,255,0.08)] flex justify-end">
+        <button class="px-6 py-2.5 bg-[#ffca99] text-[#2b211e] font-label-md text-label-md uppercase tracking-wider font-semibold" onclick="closeManifestoModal()">
+          Close Manifesto
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 8. EDITORIAL LOOKBOOK MODAL -->
+  <div id="lookbookModal" class="drawer-backdrop fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-4">
+    <div class="modal-dialog bg-[#2b211e] border border-[rgba(255,255,255,0.12)] max-w-4xl w-full p-6 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+      <button class="absolute top-4 right-4 text-[#d4c3be] hover:text-[#ffca99]" onclick="closeLookbookModal()">
+        <span class="material-symbols-outlined text-2xl">close</span>
+      </button>
+
+      <div class="text-center mb-6">
+        <span class="font-label-sm text-xs text-[#ffca99] uppercase tracking-widest">Seasonal Lookbook Nº 04</span>
+        <h3 class="font-headline-xl text-headline-lg text-[#FCF9F3] mt-1">Autumn Neutrality Archival Looks</h3>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="space-y-3">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAg5hhNFI71W0_J4qRGPxmDCt9JVq51wyB1JrpaPXFhDu2j4MzgaoS62iSRNG2TkpDxq8y-zUlWoM2AyCcJBRAIL8sw2p0lWw7MAzxLrh16zt8VM18oHkaHBlUyGUvt6UaH2X8WKuEqu04Ke3DVy8QHgEDd4ob5G9gPEs8VAHodwWgO3N-lYBw_Jv4UjlJiKOR9xyhVppILx7Z-7rfBgOYU2hp2WbPOWMa_lujeLG3MbcROXOE7UMqh" class="w-full aspect-[4/5] object-cover shadow-lg">
+          <div class="flex justify-between items-center">
+            <div>
+              <span class="font-label-sm text-xs text-[#ffca99] uppercase">Look 01</span>
+              <h4 class="font-headline-sm text-sm text-[#FCF9F3]">Double-Faced Paletot &amp; Camel Cashmere</h4>
+            </div>
+            <button class="px-3 py-1 bg-[#ffca99] text-[#2b211e] font-label-sm text-xs uppercase tracking-wider font-semibold" onclick="closeLookbookModal(); openQuickView('prod-06')">
+              Shop Look
+            </button>
+          </div>
+        </div>
+
+        <div class="space-y-3">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiFklJEAQgBxCYA01sk5HyxhdFpuXcrPsGQ8EJdFtwu65Ts3Mg1uL9YMIZ3z1wHjD1u2NFw-59MXE3knQQxEjeGaC2cQ7Ioc7oGOnFDwvRN6KP-POqrzfZEDKNxXWt4kyIwVdepxXH9bQIkWQBwNL3Q3vxxo4iT5ddkVOu5NYUwAQTHCfPaPo55-Ft7kE2r5EajWbkrc42zyRD2Tm0B6R_4rzFUD931W6LsuwD8Lqw1IQZ-IxmOJ4e" class="w-full aspect-[4/5] object-cover shadow-lg">
+          <div class="flex justify-between items-center">
+            <div>
+              <span class="font-label-sm text-xs text-[#ffca99] uppercase">Look 02</span>
+              <h4 class="font-headline-sm text-sm text-[#FCF9F3]">Organic Waffle Babywear &amp; Oat Cardigan</h4>
+            </div>
+            <button class="px-3 py-1 bg-[#ffca99] text-[#2b211e] font-label-sm text-xs uppercase tracking-wider font-semibold" onclick="closeLookbookModal(); openQuickView('prod-03')">
+              Shop Look
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 9. MOBILE NAVIGATION DRAWER -->
+  <div id="mobileNavDrawer" class="drawer-backdrop fixed inset-0 z-50 bg-black/75 backdrop-blur-md flex">
+    <div class="drawer-panel w-4/5 max-w-sm h-full bg-[#342b29] p-6 flex flex-col justify-between shadow-2xl border-r border-[rgba(255,255,255,0.1)]">
+      <div>
+        <div class="flex items-center justify-between pb-4 border-b border-[rgba(255,255,255,0.08)]">
+          <span class="font-headline-md text-xl uppercase tracking-wider text-[#FCF9F3]">ATIF STORE</span>
+          <button onclick="toggleMobileNav()" class="text-[#d4c3be]">
+            <span class="material-symbols-outlined text-2xl">close</span>
+          </button>
+        </div>
+
+        <nav class="flex flex-col space-y-4 mt-6">
+          <a class="font-headline-sm text-lg text-[#FCF9F3] hover:text-[#ffca99] transition-colors" href="#featured-collection" onclick="toggleMobileNav(); filterByDept('women')">Women's Sartorial</a>
+          <a class="font-headline-sm text-lg text-[#FCF9F3] hover:text-[#ffca99] transition-colors" href="#featured-collection" onclick="toggleMobileNav(); filterByDept('men')">Men's Knitwear &amp; Outerwear</a>
+          <a class="font-headline-sm text-lg text-[#FCF9F3] hover:text-[#ffca99] transition-colors" href="#featured-collection" onclick="toggleMobileNav(); filterByDept('kids')">Kids &amp; Toddlers</a>
+          <a class="font-headline-sm text-lg text-[#FCF9F3] hover:text-[#ffca99] transition-colors" href="#featured-collection" onclick="toggleMobileNav(); filterByDept('loungewear')">Loungewear</a>
+          <a class="font-headline-sm text-lg text-[#FCF9F3] hover:text-[#ffca99] transition-colors" href="#featured-collection" onclick="toggleMobileNav(); filterByDept('all')">New In Capsule</a>
+          <a class="font-headline-sm text-lg text-[#FCF9F3] hover:text-[#ffca99] transition-colors cursor-pointer" onclick="toggleMobileNav(); openLookbookModal()">Archival Lookbook</a>
+          <a class="font-headline-sm text-lg text-[#FCF9F3] hover:text-[#ffca99] transition-colors cursor-pointer" onclick="toggleMobileNav(); openManifestoModal()">Transparency Manifesto</a>
+          <a class="font-headline-sm text-lg text-[#FCF9F3] hover:text-[#ffca99] transition-colors cursor-pointer" onclick="toggleMobileNav(); openStylistModal()">Book Atelier Stylist</a>
+        </nav>
+      </div>
+
+      <div class="pt-6 border-t border-[rgba(255,255,255,0.08)] text-xs text-[#d4c3be]">
+        <p class="uppercase font-label-sm tracking-widest text-[#ffca99]">Atelier &amp; Co. Concierge</p>
+        <p class="mt-1">Private Client Hotline: +1 (800) 283-5437</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 10. TOAST NOTIFICATIONS CONTAINER -->
+  <div id="toast-container"></div>
+
+  <!-- APPLICATION LOGIC -->
+  <script src="app.js"></script>
+  <script>
+    // Department filtering bridge for nav links
+    function filterByDept(dept) {
+      State.currentCategory = dept;
+      const filterButtons = document.querySelectorAll('#productFilterControls button');
+      filterButtons.forEach(btn => {
+        const cat = btn.getAttribute('data-category');
+        if (cat === dept) {
+          btn.classList.add('bg-[#ffca99]', 'text-[#2b211e]', 'font-semibold');
+          btn.classList.remove('bg-[#3f3533]', 'text-[#FCF9F3]');
+        } else {
+          btn.classList.remove('bg-[#ffca99]', 'text-[#2b211e]', 'font-semibold');
+          btn.classList.add('bg-[#3f3533]', 'text-[#FCF9F3]');
+        }
+      });
+      renderProducts();
+    }
+  </script>
+</body>
+</html>

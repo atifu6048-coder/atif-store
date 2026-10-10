@@ -1,0 +1,176 @@
+/* Custom styles and luxury micro-interactions for ATIF STORE / ATELIER & CO. */
+
+:root {
+  --color-primary-dark: #140c09;
+  --color-primary-container: #2b211e;
+  --color-warm-dark: #3f3533;
+  --color-warm-medium: #504441;
+  --color-card-bg: #342b29;
+  --color-caramel-accent: #ffca99;
+  --color-camel: #c89d71;
+  --color-terracotta: #a87c51;
+  --color-oat-cream: #fcf9f3;
+  --color-oat-muted: #ebe6df;
+  --color-border-subtle: rgba(255, 255, 255, 0.08);
+  --color-border-hover: rgba(255, 202, 153, 0.4);
+}
+
+/* Custom scrollbar for modern browsers */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #2b211e;
+}
+::-webkit-scrollbar-thumb {
+  background: #504441;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a87c51;
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: rgba(63, 53, 51, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--color-border-subtle);
+}
+
+/* Drawer & Modal Transitions */
+.drawer-backdrop {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.35s ease;
+}
+.drawer-backdrop.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.drawer-panel {
+  transform: translateX(100%);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.drawer-backdrop.active .drawer-panel {
+  transform: translateX(0);
+}
+
+.modal-dialog {
+  opacity: 0;
+  transform: scale(0.96) translateY(12px);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.drawer-backdrop.active .modal-dialog {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+/* Swatch Button Active State */
+.swatch-btn {
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.swatch-btn:hover {
+  transform: scale(1.18);
+}
+.swatch-btn.active {
+  box-shadow: 0 0 0 2px #ffca99, 0 0 0 4px #342b29;
+}
+
+/* Size Button Active State */
+.size-btn {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.2s ease;
+}
+.size-btn:hover {
+  border-color: #ffca99;
+  color: #ffca99;
+}
+.size-btn.active {
+  background-color: #ffca99;
+  color: #2b211e;
+  border-color: #ffca99;
+  font-weight: 600;
+}
+
+/* Filter tab button active */
+.filter-btn {
+  transition: all 0.25s ease;
+}
+.filter-btn.active {
+  background-color: #ffca99 !important;
+  color: #2b211e !important;
+  font-weight: 600;
+}
+
+/* Toast container & animations */
+#toast-container {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  pointer-events: none;
+}
+.toast-item {
+  pointer-events: auto;
+  min-width: 300px;
+  max-width: 420px;
+  background: #2b211e;
+  border: 1px solid rgba(255, 202, 153, 0.3);
+  color: #fcf9f3;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.toast-item.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Card hover zoom */
+.product-card-img {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.group:hover .product-card-img {
+  transform: scale(1.05);
+}
+
+/* Shimmer animation for free shipping bar */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.shipping-progress {
+  background: linear-gradient(90deg, #c89d71 0%, #ffca99 50%, #c89d71 100%);
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite linear;
+}
+
+/* Ripple / pulse effect */
+@keyframes subtle-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+.pulse-dot {
+  animation: subtle-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Quick Add button slide-up */
+.quick-add-slide {
+  transform: translateY(100%);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.group:hover .quick-add-slide {
+  transform: translateY(0);
+}
