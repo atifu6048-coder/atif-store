@@ -2,9 +2,7 @@
   "name": "atif-store-atelier",
   "version": "1.0.0",
   "description": "ATIF STORE — Luxury Editorial Sartorial & Capsule E-Commerce Website",
-  "main": "server.js",
   "scripts": {
-    "start": "node server.js",
     "dev": "node server.js"
   },
   "keywords": ["luxury", "fashion", "ecommerce", "editorial", "atelier"],

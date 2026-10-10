@@ -17,7 +17,7 @@ const MIME_TYPES = {
   '.ico': 'image/x-icon'
 };
 
-const server = http.createServer((req, res) => {
+const requestHandler = (req, res) => {
   let reqPath = req.url.split('?')[0];
   if (reqPath === '/' || reqPath === '') {
     reqPath = '/index.html';
@@ -51,8 +51,13 @@ const server = http.createServer((req, res) => {
     });
     res.end(content);
   });
-});
+};
 
-server.listen(PORT, () => {
-  console.log(`ATIF STORE server running at http://localhost:${PORT}`);
-});
+if (require.main === module) {
+  const server = http.createServer(requestHandler);
+  server.listen(PORT, () => {
+    console.log(`ATIF STORE server running at http://localhost:${PORT}`);
+  });
+}
+
+module.exports = requestHandler;
